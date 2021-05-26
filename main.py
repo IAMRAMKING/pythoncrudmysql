@@ -1,3 +1,4 @@
+#importing mysql and all funtions
 import mysql.connector
 import createsql
 import insertsql
@@ -10,6 +11,9 @@ class Jdbc:
         inp=input("Choose the below options to perform \n 1.Create \n 2.Insert \n 3.Select \n 4.Update \n 5.Delete \n Enter the Choice here: ")
         return inp
     def jdbcconnection(self,i_input):
+        
+        #creating and establishing the connection
+
         mydb=mysql.connector.connect(host="localhost",
                                      user="root",
                                      password="123ram123",
